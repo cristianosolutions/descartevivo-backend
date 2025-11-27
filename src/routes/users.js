@@ -1,6 +1,6 @@
 const express = require('express');
 const bcrypt = require('bcrypt');
-const pool = require('../db');
+const pool = require('../Old_db');
 const jwt = require('jsonwebtoken');
 const authMiddleware = require('../middleware/auth');
 
