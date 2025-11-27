@@ -13,7 +13,9 @@ const dashboardRouter = require('./routes/dashboard');
 const reportRoutes = require("./routes/reportRoutes");
 
 app.use(cors({
-  origin: "http://localhost:3000",
+  origin:["http://localhost:3000",
+          "https://descartevivo.vercel.app",
+         ], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
