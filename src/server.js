@@ -1,7 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const app = express();
-require('dotenv').config();
+
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 // Rotas
 const authMiddleware = require("./middleware/auth");
